@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1200px ;
+    margin: 0 auto;
+}
+/* top header css */
+.top-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-header{
+    background-color:#163651;
+}
+.top-header-left{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.left-item>p{
+    color: white;
+    font-size: .6rem;
+}
+.icon-color{
+   color: #40a5a1;
+   margin-right: .5rem;
+}
+.right-icon{
+    font-weight: 400;
+    width: .9rem;
+    color: white;
+    
+}
+.social-icon{
+    color: white;
+    margin-right: 1rem;
+}
+/* bottom header css */
+.bottom-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.bottom-header-menu>ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.bottom-header-menu>ul>li{
+    list-style-type: none;
+    
+}
+.bottom-header-menu>ul>li>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 1.5rem;
+
+}
+/* banner css */
+.banner-content{
+    background-image: url('../image/banner2.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem 0;
+    animation: fade 2s;
+}
+@keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(200px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.banner-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.banner-text{
+    animation:fadeLeft 2s
+}
+@keyframes fadeLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+.banner-text>h1{
+ color: white;
+ font-size: 3rem;
+ margin-bottom: .7rem;
+}
+.banner-text>p{
+ color: white;
+ font-size: 1rem;
+ margin-bottom: 1.5rem;
+}
+.btn{
+    padding: .6rem .8rem;
+    background-color: #40a5a1;
+    border: 0;
+    border-radius: 1rem;
+    color: white;
+}
+/* form css */
+.form-content{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    animation: fadeRight 2s;
+}
+@keyframes fadeRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.form-content>h1{
+    color: black;
+    margin-bottom: 1rem;
+    
+}
+.form-content>form>input{
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    padding: .7rem 0;
+    border-radius: 3rem;
+    margin-bottom: 1.5rem;
+}
+.form-content>form>label{
+    color: black;
+}
+.form-terms{
+    display: flex;
+    align-items: center;
+}
+.form-terms>span{
+    color: black;
+    font-size: .8rem;
+}
+.form-terms>span>a{
+    color: #5fc7eb;
+    
+}
+.form-terms>i{
+    color: #627089;
+    font-size: 1.5rem;
+    margin-right: .4rem;
+}
+.btn-apply{
+    border: 0;
+    padding: .5rem 1rem;
+    background-color: #02274c;
+    color: white;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.btn-apply>i{
+    margin-right:5px;
+    position: relative;
+    top: 3px;
+}
+.btn-icon{
+    margin-left:.5rem;
+    
+}
+/* service */
+.service-main{
+    background-color:#F0F9F9;
+    padding: 5rem 0;
+}
+.service{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: .6rem;
+}
+.service-item{
+    animation:zoomIn 5s ;
+}
+@keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+.service-item>h1{
+    font-size: 1rem;
+}
+.service-item>img{
+    margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .service {
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
